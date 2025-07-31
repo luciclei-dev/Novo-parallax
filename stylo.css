@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   background:#0f0f0f;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+section:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 10000;
+    background: linear-gradient(to top, #242323, transparent);
+
+}
+section:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+   /*background-color:;*/
+    mix-blend-mode: color;
+
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+   display: flex;
+   overflow: hidden;
+   justify-content: center;
+   align-items: center;
+  
+
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+   
+}
+.texto{
+    position: relative;
+    color: white;
+    font-size: 50px;
+    z-index: 0;
+}
+.estrada{
+    z-index: 1;
+}
+
+.ceu {
+  position: absolute;
+  transition: transform 0.5s linear;
+  will-change: transform;
+  top: -20%;
+}
+
+.img-fundo{
+   position: relative;
+   width: 100%;
+   opacity: 0.7;
+  
+}
+.img-fundo:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 10000;
+    background: linear-gradient(to bottom , #3f3e3e, transparent);
+}
+.fundo{
+    width: 100%;
+    height: 100%;
+}
+
+.frase{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+h1{
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgb(28, 28, 29);
+    font-size: 45px;
+    
+}
+p{
+    font-size: 2.2rem;
+    text-align: center;
+    color: rgb(119, 183, 243);
+    width: 400px;
+    height: px;
+    padding: 20px 30px;
+    text-shadow: 1px 3px 1px rgb(9, 74, 139);
+    font-weight: bold;
+}
+span{
+    color: rgb(240, 240, 100);
+    font-size: 20px;
+}
+audio{
+    width: 200px;
+   
+}
